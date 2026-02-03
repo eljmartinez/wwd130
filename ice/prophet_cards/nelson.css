@@ -1,0 +1,42 @@
+/* Insert styles here, this is called an internal stylesheet  */
+        body {
+            background: #D3CEDF;
+        }
+        #card {
+            background-color: #665687;
+            border-radius: 20px;
+            border: solid #262032;
+            padding: 50px;
+            width: 300px;
+            height: 590px;
+            margin: 0 auto;
+        }
+
+            h1 {
+                text-align: center;
+                color: #D3CEDF;
+                margin-top: -7%;
+                font-family: "Roboto Mono", monospace;
+            }
+
+             h3 {
+                text-align: center;
+                color: #D3CEDF;
+                line-height: .5;
+                font-family: "Roboto Mono", monospace;
+            }
+
+            h4{
+                text-align: center;
+                color: #D3CEDF;
+                font-family: "Playwrite NZ Basic", cursive;
+            }
+
+        img { width: 300px;
+            border-radius: 20px;
+            border: solid #262032;
+            display: block;
+            margin: 0 auto;
+        }
+
+        
