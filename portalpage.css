@@ -1,0 +1,77 @@
+/*
+Google Sans Flex
+Roboto
+}*/
+body {
+       background: #E1B7C4;
+  }
+header {
+    background-color: #391822;   /* light gray rectangle */
+    padding: 20px;               /* space inside the rectangle */
+    display: flex;               /* put logo + text on same line */
+    align-items: center;         /* vertically center them */
+    justify-content: center;     /* center everything horizontally */
+    gap: 20px;                   /* space between logo and Welcome */
+    width: 100%;                 /* full width across the page */
+    box-shadow: 0 2px 5px #8F3D56(0,0,0,0.2); /* optional nice shadow */
+}
+
+header {
+    display: flex;
+    flex-direction: column; /* stack items top → bottom */
+    justify-content: center;
+    align-items: center;
+}
+
+
+header h1 {
+    margin-top: 10px;
+    font-family: "Google Sans Flex", monospace;
+    color: #EDD4DB;
+}
+
+#logo {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: auto;
+}
+body h2{
+    font-family: "Google Sans Flex", monospace;
+    color: #EDD4DB;
+
+}
+
+ .card {
+            background-color: #B65471;
+            border-radius: 20px;
+            border: solid #8F3D56;
+            padding: 50px;
+            width: 150px;
+            height: 100px;
+
+            display: flex; justify-content: center; /* centers left–right */ 
+            align-items: center; /* centers top–bottom */ 
+            text-align: center;
+            
+ }
+
+ .card:hover { 
+    transform: scale(1.07); /* makes it slightly bigger */ 
+    box-shadow: 0 0 20px rgba(255, 150, 180, 0.8); /* soft pink glow */ 
+    color: #8F3D56;
+}
+
+ .cardgrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+
