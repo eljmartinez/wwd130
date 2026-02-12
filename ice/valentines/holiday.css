@@ -1,0 +1,81 @@
+body {
+    background-color: pink;
+
+}
+
+header { 
+    background-color: darkred; /* bar color */  
+    padding: 10px 0;
+    margin-bottom: 25px; 
+} 
+
+nav ul {
+     list-style: none; /* remove bullets */
+      margin: 0; 
+      padding: 0; 
+      display: flex; /* line items up horizontally */
+    justify-content: center; /* center the menu */ 
+    gap: 40px; /* space between items */ 
+} 
+nav li { 
+    color: pink; 
+    font-weight: bold;
+     cursor: pointer; 
+    } 
+    nav li:hover { 
+        transform: scale(1.50);
+    }
+h1 {
+    text-align: center;
+    margin: 0 auto;
+    color: darkred;
+}
+
+.card {
+    background-color:pink;
+            border-radius: 20px;
+            border: solid darkred;
+            padding: 50px;
+            width: 150px;
+            height: 300px;
+            margin: 0 auto;
+            
+            color: darkred;
+            display: flex; flex-direction: column; /* stack header above paragraph */ 
+            justify-content: flex-start; /* push content to the top */ 
+            align-items: center; /* center horizontally */ 
+            text-align: center; /* center text lines */ 
+}
+
+.card:hover { 
+    transform: scale(1.07); /* makes it slightly bigger */ 
+    box-shadow: 0 0 20px rgba(255, 150, 180, 0.8); /* soft pink glow */ 
+}
+
+#cardgrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* two cards per row */
+    gap: 30px; /* space between cards */
+    max-width: 900px;
+    margin: 40px auto; /* center the whole grid */
+}
+
+.image-wrapper { 
+    background-image: url("images/valentines.png"); 
+    background-size: contain; 
+    background-position: center; 
+    padding: 40px; 
+
+    width: 85%;   /* make it smaller */
+    height: auto;   /* keeps proportions correct */
+    display: block;
+    margin: 0 auto; /* centers it */
+    border: solid darkred;
+    border-radius: 20px;
+}
+
+.footer{
+    color: darkred;
+    text-align: center;
+}
+
