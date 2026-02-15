@@ -2,6 +2,13 @@
 Google Sans Flex
 Roboto
 }*/
+/*
+#391822 
+#EDD4DB 
+#C27089 
+#B65471 
+#8F3D56 
+*/
 body {
        background: #E1B7C4;
   }
@@ -12,7 +19,7 @@ header {
     align-items: center;         /* vertically center them */
     justify-content: center;     /* center everything horizontally */
     gap: 20px;                   /* space between logo and Welcome */
-    width: 100%;                 /* full width across the page */
+    width: 98%;                 /* full width across the page */
     box-shadow: 0 2px 5px #8F3D56(0,0,0,0.2); /* optional nice shadow */
 }
 
@@ -36,6 +43,20 @@ header h1 {
     width: 100px;
     height: auto;
 }
+.swirlone {
+    display: block;
+    margin: left;
+    width: 100px;
+    height: auto;
+}
+
+.swirltwo {
+    display: block;
+    margin: left;
+    width: 100px;
+    height: auto;
+}
+
 body h2{
     font-family: "Google Sans Flex", monospace;
     color: #EDD4DB;
@@ -72,6 +93,35 @@ body h2{
     margin-bottom: 50px;
 }
 
+.headerwrap, .footerwrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.headcontent, .footcontent {
+  text-align: center;
+}
+
+.swirlone, .swirltwo {
+  width: 200px;
+  height: auto;
+}
+
+.swirltwo {
+    display: block;
+    width: 200px;
+    height: auto;
+    transform: scaleX(-1); /* flips it horizontally */
+}
+
+#footer {
+    background-color: #391822;
+    text-align: center;
+    width: 98%;
+    color: #EDD4DB;
+}
 
 
 

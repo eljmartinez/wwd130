@@ -9,40 +9,78 @@
     <link rel="stylesheet" href="portalpage.css">
     <title>Portal Page</title>
 
-    <header>
-        <a>
-            <img id="logo" src="eleanorslogo.png" alt="Logo image">
-        </a>
-
-        <h1> Welcome!</h1>
-
+    <header> 
+        <div class="headerwrap">
+             <img class="swirlone" src="swirltwo.png" alt="swirl image">
+              <div class="headcontent"> 
+                <img id="logo" src="eleanorslogo.png" alt="Logo image"> 
+                <h1>Welcome!</h1> 
+            </div> 
+            <img class="swirltwo" src="swirltwo.png" alt="swirl image"> 
+        </div> 
     </header>
 
     <body>
         <nav>
-    <div class="cardgrid">
-        <a href="https://eljmartinez.github.io/wwd130/wwr" class="card">
-            <h2>WWR</h2>
-        </a>
+        <ul class="cardgrid">
+            <li>
+                <a href="https://eljmartinez.github.io/wwd130/wwr" class="card">
+                    <h2>WWR</h2>
+                </a>
+            </li>
 
-        <a href="https://eljmartinez.github.io/wwd130/ice/prophet_cards/oaks.html" class="card">
-            <h2>ICE</h2>
-        </a>
+            <li>
+                <a href="https://eljmartinez.github.io/wwd130/ice/prophet_cards/oaks.html" class="card">
+                    <h2>ICE</h2>
+                </a>
+            </li>
 
-        <a href="portalpage.html" class="card">
-            <h2>Menu</h2>
-        </a>
+            <li>
+                <a href="portalpage.html" class="card">
+                    <h2>Menu</h2>
+                </a>
+            </li>
 
-        <a href="about.html" class="card">
-            <h2>About Me</h2>
-        </a>
-    </div>
-</nav>
+            <li>
+                <a href="about.html" class="card">
+                    <h2>About Me</h2>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
+        <table>
+            <tr>
+              <th>Favorite Color</th>
+              <th>Favorite Animal</th>
+            </tr>
+            <tr>
+              <th>Blue</th>
+              <th>Cat</th>
+            </tr>
+        </table>
+
+        <form class="form">
+            <h2>What's Your Favorite Color and Animal? </h2>
+
+            <label for="favcolor">Favorite Color</label>
+            <input type="text" id="favcolor">
+
+            <label for="favanimal">Favorite Animal</label>
+            <input type="text" id="favanimal" >
+
+            <button type="submit">Add</button>
+          </form>
 
     </body>
-
-    <footer>
-
-
-        
-    </footer>
+    <footer id="footer"> 
+        <div class="footerwrap"> 
+            <img class="swirlone" src="swirltwo.png" alt="swirl image">
+             <div class="footcontent"> 
+                <p>2026 - Eleanor Lisonbee</p> 
+                <p><a href="https://www.facebook.com/elbeine/">Facebook</a></p> 
+                <p><a href="https://www.linkedin.com/in/eleanor-lisonbee-972495355/">LinkedIn</a></p>
+             </div> <img class="swirltwo" src="swirltwo.png" alt="swirl image"> 
+            </div> 
+        </footer>
