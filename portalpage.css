@@ -70,10 +70,12 @@ body h2{
             padding: 50px;
             width: 150px;
             height: 100px;
+            transition: all 0.3s ease;
 
             display: flex; justify-content: center; /* centers left–right */ 
             align-items: center; /* centers top–bottom */ 
             text-align: center;
+            text-decoration: none; 
             
  }
 
@@ -81,6 +83,10 @@ body h2{
     transform: scale(1.07); /* makes it slightly bigger */ 
     box-shadow: 0 0 20px rgba(255, 150, 180, 0.8); /* soft pink glow */ 
     color: #8F3D56;
+}
+
+.card:hover h2{
+    color: #8F3D56
 }
 
  .cardgrid {
@@ -91,6 +97,8 @@ body h2{
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 50px;
+    list-style: none;
+    padding: 0; 
 }
 
 .headerwrap, .footerwrap {
@@ -123,5 +131,46 @@ body h2{
     color: #EDD4DB;
 }
 
+#table {
+    width: 50%;
+    margin: 50px auto;  /* centers horizontally */
+    border-collapse: collapse;
+    text-align: center;
+    color: #8F3D56;
+}
+
+/* This targets the actual cells to give them a consistent look */
+#table th, #table td {
+    padding: 10px;
+    border: 1px solid #8F3D56; /* Optional: helps see the table structure */
+}
+
+.form {
+    color: #8F3D56;
+    max-width: 400px;    /* Gives the form a defined width */
+    margin: 40px auto;   /* Centers it horizontally */
+    display: flex;       /* Use Flexbox to stack inputs vertically */
+    flex-direction: column; 
+    gap: 10px;           /* Space between labels and inputs */
+    padding: 20px;
+    background-color: #EDD4DB; /* Optional: makes form stand out */
+    border-radius: 10px;
+}
+
+.button{
+    color: #8F3D56;
+    width: 100px;
+    margin: 40px auto;
+}
+
+.button:hover{
+    color: #EDD4DB;
+    background-color: #8F3D56;
+}
+
+.form h2 {
+    text-align: center;
+    color: #8F3D56; 
+}
 
 
