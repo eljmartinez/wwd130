@@ -162,6 +162,77 @@
     transform: scale(1.07); /* makes it slightly bigger */ 
     box-shadow: 0 0 20px rgba(7, 141, 25, 0.8); 
     transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+    #italy {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            height: 200px;
+            width: 300px;
+        }
+
+        #igreen {
+            background-color: #008C45;
+            grid-column: 1;
+        }
+        #iwhite {
+            background-color: #F4F5F0;
+            grid-column: 2;
+        }
+        #ired {
+            background-color: #CD212A;
+            grid-column: 3;
+        }
+
+        #italy:hover { 
+            transform: scale(1.07); 
+            box-shadow: 0 0 20px rgba(0, 140, 69, 0.8); 
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        #car {
+    display: grid;
+    /* 5 columns, 4 rows */
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 200px;
+    width: 300px;
+    position: relative;
+    background-color: white; /* fallback */
+}
+
+/* Horizontal Stripes */
+.stripe { grid-column: 1 / 6; }
+.blue   { background-color: #003087; grid-row: 1; }
+.white  { background-color: #ffffff; grid-row: 2; }
+.green  { background-color: #289728; grid-row: 3; }
+.yellow { background-color: #ffce00; grid-row: 4; }
+
+/* The Vertical Red Bar */
+.vertical-red {
+    background-color: #d21034;
+    grid-column: 3 / 4; /* Centered column */
+    grid-row: 1 / 5;    /* Spans all 4 rows */
+    z-index: 1;         /* Ensures it sits on top of stripes */
+}
+
+/* The Star */
+.car-star {
+    width: 35px;
+    aspect-ratio: 1;
+    background: #ffce00;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+    z-index: 2; /* Sits on top of the blue stripe */
+}
+
+#car:hover { 
+    transform: scale(1.07); 
+    box-shadow: 0 0 20px rgba(0, 48, 135, 0.6); 
+    transition: transform 0.3s, box-shadow 0.3s;
+}
 }
     </style>
 </head>
@@ -174,7 +245,7 @@
         <h2>Chile</h2>
         <div id="chile">
             <div id="blue">
-                <div class="star"></div>
+            <div class="star"></div>
             </div>
             <div id="white"></div>
             <div id="red"></div>
@@ -206,6 +277,26 @@
             <div id="bred"></div>
         </div>
         <hr>
+
+        <h2>Italy</h2>
+        <div id="italy">
+            <div id="igreen"></div>
+            <div id="iwhite"></div>
+            <div id="ired"></div>
+        </div>
+        <hr>
+
+        <h2>Central African Republic</h2>   
+    <div id="car">
+        <div class="stripe blue"></div>
+        <div class="stripe white"></div>
+        <div class="stripe green"></div>
+        <div class="stripe yellow"></div>
+        <div class="vertical-red"></div> <div class="car-star">
+
+            
+        </div>     </div>
+    <hr>
     </main>
 </body>
 
