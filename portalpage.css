@@ -79,65 +79,15 @@ body h2{
             
  }
 
- .icecard {
-            background-color: #B65471;
-            border-radius: 20px;
-            border: solid #8F3D56;
-            padding: 50px;
-            width: 150px;
-            height: 100px;
-            transition: all 0.3s ease;
-
-            display: flex; justify-content: center; /* centers left–right */ 
-            align-items: center; /* centers top–bottom */ 
-            text-align: center;
-            text-decoration: none; 
-            
- }
-
- /* 1. Hide the description by default */
-.card-description {
-    opacity: 0;
-    transition: opacity 0.3s ease; /* Smooth fade-in */
-    margin-top: 10px;
-    font-size: 0.9rem;
-    color: #8F3D56; /* Matching your theme */
-}
-
-/* 2. Show the description when the card is hovered */
-.icecard:hover .card-description {
-    opacity: 1;
-}
-
-/* Your existing hover styles */
-.icecard:hover { 
-    transform: scale(1.07); 
-    box-shadow: 0 0 20px rgba(255, 150, 180, 0.8); 
-    color: #8F3D56;
-}
-
-.icecard:hover h2 {
-    color: #8F3D56;
-}
-
- .icecard:hover { 
-    transform: scale(1.07); /* makes it slightly bigger */ 
-    box-shadow: 0 0 20px rgba(255, 150, 180, 0.8); /* soft pink glow */ 
-    color: #8F3D56;
-}
-
-.icecard:hover h2{
-    color: #8F3D56
-}
-
- .card:hover { 
-    transform: scale(1.07); /* makes it slightly bigger */ 
-    box-shadow: 0 0 20px rgba(255, 150, 180, 0.8); /* soft pink glow */ 
-    color: #8F3D56;
-}
-
+ 
 .card:hover h2{
     color: #8F3D56
+}
+
+.card:hover { 
+    transform: scale(1.07); /* makes it slightly bigger */ 
+    box-shadow: 0 0 20px rgba(255, 150, 180, 0.8); /* soft pink glow */ 
+    color: #8F3D56;
 }
 
  .cardgrid {
@@ -145,18 +95,6 @@ body h2{
     grid-template-columns: repeat(2, 1fr);
     gap: 100px;
     max-width: 600px;
-    margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    list-style: none;
-    padding: 0; 
-}
-
-.icecardgrid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 100px;
-    max-width: 85%;
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -238,40 +176,72 @@ body h2{
 
 #description{
     color: #8F3D56;
+    max-width: 80%;
+    margin: 0 auto;
 }
 
-/* Change this in your .icecard and .card classes */
-.icecard, .card {
-    background-color: #B65471;
-    border-radius: 20px;
-    border: solid #8F3D56;
-    padding: 20px; /* Reduced from 50px to make room for text */
-    width: 200px;  /* Slightly wider to fit text better */
-    min-height: 120px; /* Use min-height instead of height */
-    height: auto; 
-    transition: all 0.3s ease;
+/*ice page*/
+.icecardgrid {
+    display: grid;
+    max-width: 85%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    list-style: none;
+    padding: 0; 
 
-    display: flex; 
-    flex-direction: column; /* Stacks H2 and P vertically */
-    justify-content: center; 
-    align-items: center; 
-    text-align: center;
-    text-decoration: none; 
+    /* grid for mobile phones*/
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 40px; 
+    
 }
 
-/* Ensure the description is hidden by default and positioned correctly */
+.icecard {
+            background-color: #B65471;
+            border-radius: 20px;
+            border: solid #8F3D56;
+            padding: 50px;
+            width: 150px;
+            height: 100px;
+            transition: all 0.3s ease;
+
+            display: flex; justify-content: center; /* centers left–right */ 
+            align-items: center; /* centers top–bottom */ 
+            text-align: center;
+            text-decoration: none;            
+ }
+
+ .icecard:hover { 
+    transform: scale(1.07); /* makes it slightly bigger */ 
+    box-shadow: 0 0 20px rgba(255, 150, 180, 0.8); /* soft pink glow */ 
+    color: #8F3D56;
+}
+
+.icecard:hover h2{
+    color: #8F3D56
+}
+
+.card-description {
+    margin-top: 15px;
+    color: #8F3D56;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.icecardgrid li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .card-description {
     opacity: 0;
-    visibility: hidden; /* Added for better accessibility */
-    transition: opacity 0.3s ease;
-    margin-top: 10px;
-    font-size: 0.8rem; /* Smaller text for descriptions */
-    color: #EDD4DB;    /* Changed to light color to read on dark pink */
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
 }
 
-/* Reveal when hovering the card */
-.icecard:hover .card-description, 
-.card:hover .card-description {
+.icecard:hover + .card-description {
     opacity: 1;
-    visibility: visible;
+    max-height: 200px;
+    transform: translateY(0);
 }
