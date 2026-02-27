@@ -1,0 +1,159 @@
+
+body {
+    background: rgb(120, 96, 64);
+    font-family: "Times New Roman", serif;
+    display: flex; 
+    justify-content: center; 
+    padding: 20px;
+        }
+
+.overlaytextone {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    width: 100%;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    font-size: 3rem;
+}
+
+.overlaytexttwo {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    width: 100%;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    font-size: 2.2rem;
+}
+
+#formContainer {
+    margin:0 auto;
+    background-color: white;
+    width: 100%;
+    max-width: 60%;
+
+    border: 6px solid #003399;
+    border-radius: 30px;
+    position: relative;
+    flex-direction: column;
+
+    border-radius: 20px;
+    
+    max-width: 500px; /* Standard mobile-app popup width */
+    border: 8px solid #003399; /* Thicker blue border from image */
+    border-radius: 40px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+     
+#topimage { 
+    width: 100%; 
+    height: 100%;
+    display: block; 
+    object-fit: cover;
+}
+
+#closeBtn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 2px 8px;
+    cursor: pointer;
+    z-index: 20;
+}
+
+#imagewrapper {
+    position: relative;
+    width: 100%;
+    height: 300px; /* adjust until it matches your screenshot */
+    overflow: hidden;
+}
+
+#imagewrapper h3 {
+    position: absolute;
+    top: 20px;              
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 1.6rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+    z-index: 10;
+    margin: 0;
+}
+
+.center-check {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+#newsletter {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button[type="submit"] {
+    display: block;
+    margin: 15px auto 0 auto;
+}
+
+#scripture {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 5px;   
+}
+
+.book {
+    width: 90px;
+    height: auto;
+}
+
+#myForm h3 {
+    margin: 10px 0 20px 0;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 15px;
+    text-align: left;
+    align-items: center;
+}
+
+.radio-group {
+    display: flex;
+    gap: 5px;
+}
+
+#myForm {
+    position: relative;
+    background: white;
+    padding: 20px;
+    text-align: center;
+    margin: -60px auto 0 auto;
+    margin-top: -60px;   /* pull form upward over the image */
+    margin: -60px auto 0 auto; /* THIS pulls it upward */
+    border-radius: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+
+
+
+

@@ -4,28 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
     <title>Daily Feed Sign Up</title>
 
     <style>
         * {
             margin: 0;
         }
-
-        body {
-            background: rgb(120, 96, 64);
-        }
     </style>
-
-
-
 
 </head>
 
 <body>
     <div id="formContainer">
+    <div id="imagewrapper">
+        <button type="button" id="closeBtn">X</button>
+        <h1 class="overlaytextone">Daily Feed</h1> <h2 class="overlaytexttwo">Scripture a Day</h2>
+        <img id="topimage" src="images/jesus_feeds_5000.jpeg" alt="Jesus feeding the 5000">
+    </div>
+
+    <form id="myForm">
+        
+
         <h3>Sign Up for Daily Scripture Feed</h3>
-        <form id="myForm">
-            <button type="button" id="closeBtn">X</button>
+
+        <div class="form-grid">
             <label for="username">User Name:</label>
             <input type="text" id="username" name="username" required>
 
@@ -36,27 +39,37 @@
             <input type="email" id="email" name="email" required>
 
             <label>Gender:</label>
-            <div>
+            <div class="radio-group">
                 <input type="radio" id="male" name="gender" value="male" required>
                 <label for="male">Male</label>
                 <input type="radio" id="female" name="gender" value="female" required>
                 <label for="female">Female</label>
             </div>
+            <div class="center-check">
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter">Subscribe to Newsletter:</label>
+            </div>
 
-            <section>
-                <input type="checkbox" id="newsletter" name="newsletter">
-                <label for="newsletter">Subscribe to newsletter</label>
-            </section>
+            <div class="center-check">
+            <input type="checkbox" id="conditions" name="conditions" required>
+            <label for="conditions">I acknowledge Terms and Conditions</label>
+            </div>
 
-            <section>
-                <input type="checkbox" id="conditions" name="conditions" required>
-                <label for="conditions">I acknowledge the terms and conditions</label>
-            </section>
+        </div>
 
-            <section>
-                <button type="submit">Submit</button>
-            </section>
-        </form>
+        <button type="submit" id="submitBtn">Submit</button>
+    </form>
+    <div id="scripture">
+            <img class="book" src="images/old_testament.webp" alt="old testament">
+            <img class="book" src="images/new_testament.webp" alt="new testament">
+            <img class="book" src="images/book_of_mormon.webp" alt="book of mormon">
+            <img class="book" src="images/doctrine_and_covenants.webp" alt="doctrine and covenants">
+            <img class="book" src="images/pearl_of_great_price.webp" alt="pearl of great price">
+        </div>
+    </div>
+</div>
+
+
     </div>
 
     <div id="output"></div>
