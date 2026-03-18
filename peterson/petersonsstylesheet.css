@@ -91,7 +91,9 @@ footer{
     width: 40px;
 }
 
-
+h1 {
+    font-family: Be Vietnam pro;
+}
 
 /*EXPLORE*/
 #gallerygrid {
@@ -116,6 +118,7 @@ footer{
     display: flex; justify-content: center; 
     align-items: center;
     text-align: center;
+    flex-direction: column;
     text-decoration: none;
 }
 
@@ -125,10 +128,10 @@ footer{
 }
 
 .card img {
-    margin-top: 20px; /*doesnt do anything yet*/
     width: 100%;
-    height: 70%;
-    object-fit: cover;   /* fills card without distortion */
+    height: auto;
     border-radius: 10px;
 }
+
+
 
