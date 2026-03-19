@@ -1,3 +1,5 @@
+
+/*HEADER AND FOOTER*/
 body {
     background: #BAD7F2;
 }
@@ -38,46 +40,6 @@ body {
     width:80px;
 }
 
-#hero{
-    position: relative;
-    width: 80%;
-    margin: 0 auto;
-}
-
-#heroimage{
-    width: 100%;
-    display: block;
-}
-
-#herotext{
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-#hero a{
-    position: absolute;
-    top: 60%;
-    padding: 10px 20px;
-    background: white;
-    text-decoration: none;
-    color: black;
-}
-
-#hero a:first-of-type{
-    left: 45%;
-}
-
-#hero a:last-of-type{
-    left: 55%;
-}
-
-#showcase{
-    width: 40%;
-}
-
 footer{
     display:flex;
     justify-content:space-between;
@@ -85,6 +47,7 @@ footer{
     background:#F2BAC9;
     padding:10px;
     color: white;
+    text-shadow: 0 0 10px rgba(0,0,0,0.4)
 }
 
 #socialgrid{
@@ -98,9 +61,155 @@ footer{
 }
 
 h1 {
-    color: black;
+    color: white;
     font-family: Be Vietnam pro;
 }
+
+
+
+
+
+
+
+
+
+
+
+/*HOME PAGE*/
+#hero{
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+
+#heroimage{
+    width: 100%;
+    display: block;
+}
+
+.herotextone{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: "Be Vietnam Pro";
+    color: white;
+    font-size: 400%;
+
+    background-color: rgba(176, 242, 180, 0.6); 
+    padding: 15px 25px;                     
+    border-radius: 10px;    
+    text-shadow: 0 0 10px rgba(0,0,0,0.5)               
+}
+
+.herotexttwo{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: "Be Vietnam Pro";
+    color: white;
+    font-size: 300%;
+
+    background-color: rgba(176, 242, 180, 0.6); 
+    padding: 15px 25px;                     
+    border-radius: 10px;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5)                
+}
+
+#hero a{
+    
+    padding: 15px 30px;
+    font-size: 18px;
+    font-family: Be Vietnam pro;
+    background: rgba(176, 242, 180, 0.6);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5)
+
+}
+
+#herobuttongrid{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;      
+    gap: 100px;          
+}
+
+#showcaseandp{
+    background-color: #87B9E8;
+    color: white;
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+#missiontitle {
+    text-align: center;
+    font-family: "Be Vietnam Pro";
+    font-size: 2rem;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+/* The container that holds both the p and the img */
+.mission-content {
+    display: flex;
+    align-items: center; /* Vertically centers the image relative to the text */
+    gap: 40px;           /* Adds space between the text and the image */
+    padding-bottom: 60px;
+}
+
+/* Adjust your paragraph so it doesn't take up the whole width */
+#showcaseandp p {
+    flex: 1;             /* Tells the text to take up the remaining space */
+    margin: 0;           /* Removes the 'auto' margins that were centering it */
+    font-family: "Be Vietnam Pro";
+    line-height: 1.7;
+}
+
+/* Adjust your image */
+#showcase {
+    width: 40%;          /* Keep it at 40% or adjust as needed */
+    max-width: 400px;    /* Optional: cap the size so it doesn't get too big */
+    height: auto;
+    border-radius: 10px;
+    margin: 0;           /* Removes the 'auto' margins */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*EXPLORE*/
 #gallerygrid {
