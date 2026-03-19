@@ -12,12 +12,12 @@ body {
 
 .navbutton{
     text-decoration:none;
-    color:black;
+    color:white;
     text-align:center;
     padding:10px;
     width: 200px;
 
-    background:#e5e5e5;
+    background:#E887A1;
 
     clip-path: polygon(
         10% 0,
@@ -27,6 +27,11 @@ body {
     );
 
     font-family: "Be Vietnam Pro", sans-serif;
+    transition: all 0.3s ease;
+}
+
+.navbutton:hover { 
+    transform: scale(1.2); 
 }
 
 #logo{
@@ -79,6 +84,7 @@ footer{
     align-items:center;
     background:#F2BAC9;
     padding:10px;
+    color: white;
 }
 
 #socialgrid{
@@ -92,27 +98,29 @@ footer{
 }
 
 h1 {
+    color: black;
     font-family: Be Vietnam pro;
 }
 
 /*EXPLORE*/
 #gallerygrid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 900px;
     margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     padding: 10px;
     gap: 20px;
+     justify-items: center;
 }
 
 .card{
-    width: 50%;
-    background-color: #F2BAC9;
+    width: 60%;
+    background-color: #E8CD87;
+    color: white;
     border-radius: 20px;
-    border: solid black;
+    border: solid #F2E2BA;
     padding: 50px;
-    height: 300px;
+    height: 400px;
     transition: all 0.3s ease;
 
     display: flex; justify-content: center; 
@@ -120,16 +128,25 @@ h1 {
     text-align: center;
     flex-direction: column;
     text-decoration: none;
+    
+}
+
+.card h3{
+    font-family: "Be Vietnam pro";
+}
+
+.card p{
+    font-family: "Amethysta";
 }
 
 .card:hover { 
     transform: scale(1.2); 
-    box-shadow: 0 0 20px rgba(255, 150, 180, 0.8);
 }
 
 .card img {
     width: 100%;
-    height: auto;
+    height: 50%;       
+    object-fit: cover;
     border-radius: 10px;
 }
 
