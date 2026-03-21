@@ -3,6 +3,8 @@
 body {
     background: #BAD7F2;
 }
+
+
 #navgrid{
     display:grid;
     grid-template-columns: 200px repeat(4, 300px);
@@ -65,14 +67,6 @@ h1 {
     font-family: Be Vietnam pro;
     text-shadow: 0 0 10px rgba(0,0,0,0.3)
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -162,49 +156,29 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* The container that holds both the p and the img */
+
 .mission-content {
     display: flex;
-    align-items: center; /* Vertically centers the image relative to the text */
-    gap: 40px;           /* Adds space between the text and the image */
+    align-items: center; 
+    gap: 40px;           
     padding-bottom: 60px;
 }
 
-/* Adjust your paragraph so it doesn't take up the whole width */
+
 #showcaseandp p {
-    flex: 1;             /* Tells the text to take up the remaining space */
-    margin: 0;           /* Removes the 'auto' margins that were centering it */
+    flex: 1;
+    margin: 0; 
     font-family: "Be Vietnam Pro";
     line-height: 1.7;
 }
 
-/* Adjust your image */
 #showcase {
-    width: 40%;          /* Keep it at 40% or adjust as needed */
-    max-width: 400px;    /* Optional: cap the size so it doesn't get too big */
+    width: 40%;  
+    max-width: 400px;    
     height: auto;
     border-radius: 10px;
-    margin: 0;           /* Removes the 'auto' margins */
+    margin: 0; 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -262,3 +236,97 @@ h1 {
 
 
 
+/* SUBMIT PAGE*/
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: #B0F2B4;
+    padding: 40px;
+    border: solid #84EB8B;
+    border-radius: 15px;
+    font-family: "Be Vietnam Pro", sans-serif;
+    color: white;
+}
+
+.container h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.upload-section {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.upload-box {
+    width: 200px;
+    height: 200px;
+    border: 2px dashed #84EB8B;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #84EB8B;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.upload-box:hover {
+    color: white;
+    background-color: #84EB8B;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    font-weight: 500;
+    color: white; 
+}
+
+input[type="text"], 
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #84EB8B;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    font-family: "Be Vietnam Pro", sans-serif;
+    color: #84EB8B;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.stars {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+button {
+    display: block;
+    width: 200px;
+    margin: 40px auto 0;
+    padding: 15px;
+    background-color: #84EB8B;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: "Be Vietnam Pro", sans-serif;
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: white;
+    color: #84EB8B;
+}
