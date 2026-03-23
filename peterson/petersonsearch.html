@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amethysta&family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="petersonsstylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <header>
@@ -21,17 +22,22 @@
     </nav>
 </header>
 
-<main>
-    <h2 id="searchbar">Search</h2>
-    <button>Enter</button>
-    <ul>
-       <li>Butterlies</li> 
-       <li>Begginer Projects</li> 
-       <li>Most Popular</li> 
-    </ul>
+<main class="search-container">
+    <div class="search-flex">
+        <input type="text" placeholder="Search..." id="searchbar">
+        <button id="searchbutton">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+    </div>
 
-
-
+    <div class="suggestions">
+        <h3>[Search Suggestions]</h3>
+        <ul>
+           <li>Butterflies</li> 
+           <li>Beginner Projects</li> 
+           <li>Most Popular</li> 
+        </ul>
+    </div>
 </main>
 
 
