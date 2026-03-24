@@ -350,6 +350,7 @@ button:hover {
     align-items: center; /* Centers everything horizontally */
     padding: 100px 20px;
     min-height: 60vh;
+    font-family: "Be Vietnam Pro", sans-serif;
 }
 
 .search-flex {
@@ -390,7 +391,7 @@ button:hover {
 
 .suggestions {
     width: 400px; 
-    font-family: "Be Vietnam Pro", sans-serif;
+    font-family: "Amethysta";
     color: white;
     text-shadow: 0 0 10px rgba(0,0,0,0.3)
 }
